@@ -14,7 +14,7 @@ To install the Raspbian operating system, visit https://www.raspberrypi.org/down
 * Google account.
 * Speaker.
 * Monitor.
-* Acrylic mirror.
+* Acrylic 2-way mirror.
 * Softwares with remote access make installation much easier. Among them are **Putty** and **VNC Viewer**.
 
 

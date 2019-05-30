@@ -8,13 +8,15 @@ AI Mirror is a project that uses the smart mirror technique and is based on the 
 
 As pre requisites to install AI Mirror, there are:
 
-* A Raspberry Pi 3 with Raspbian operating system.
+* A Raspberry Pi 3 with Raspbian operating system and box. Box at https://amzn.to/2wrkKHL and Raspberry Pi 3 at https://amzn.to/2JLf6ZC.
+
 To install the Raspbian operating system, visit https://www.raspberrypi.org/downloads/raspbian/. The Raspbian must be installed in a micro USB of at least 16 GB.
 * Microphone.
+* 3 Amp USB power supply. You can find it at https://amzn.to/2WbxNfE.
 * Google account.
 * Speaker.
 * Monitor.
-* Acrylic 2-way mirror.
+* Acrylic 2-way mirror. You can find it at https://amzn.to/2JMzHNf.
 * Softwares with remote access make installation much easier. Among them are **Putty** and **VNC Viewer**.
 
 
@@ -42,7 +44,7 @@ password: password-for-device
 
 ## Activating API
 
-In order to enable the Google Assistant API first access the following website https://ouo.io/VC4jBP.
+In order to enable the Google Assistant API first access the following website https://bit.ly/2QDtx2A.
 * Select your project at the top of the page.
 * Click ENABLE.
 * You now need to set up an OAuth consent. Visit https://console.developers.google.com/apis/credentials/consent.
@@ -67,6 +69,11 @@ After installation, restart your computer.
 ``` 
 sudo reboot
 ```
+The installation usually takes 10-15 minutes. If you uncomment the command below in the script, the installation will take 25-30 minutes.
+``` 
+sudo apt-get upgrade -y
+```
+This command is not always necessary. It upgrades some dependencies. It is optional!
 
 ## Activating token
 
@@ -111,6 +118,11 @@ If your Assistant's volume is too low, you can increase it by asking her to do i
 Ok Google!
 Set volume to 100%.
 ```
+You can also use the command below to increase/decrease the volume.
+```
+alsamixer
+```
+
 ## Setting your personal calendar
 
 Setting up your personal calendar to your mirror's interface it is very simple.
